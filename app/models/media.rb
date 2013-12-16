@@ -30,7 +30,7 @@ class Media < ActiveRecord::Base
   
   scope :featured, where("featured_at is not null")
   
-  attr_accessible :tag_list, :featured_at
+  attr_accessible :tag_list, :original_tag_list, :featured_at
   
   before_create :init_tag_list
   

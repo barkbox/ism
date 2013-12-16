@@ -10,7 +10,7 @@ if defined?(ActiveAdmin)
     actions :index, :show, :update, :destroy
 
 
-    config.sort_order = "posted_at_desc"
+    config.sort_order = "created_at_desc"
     index :as => :grid, :columns => 3 do |media|
       div :for => media do
         div :class => 'item' do 
